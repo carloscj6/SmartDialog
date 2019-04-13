@@ -3,7 +3,7 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
 
 ext {
-    bintrayRepo = 'ui'
+    bintrayRepo = 'UI'
     bintrayName = 'SmartDialog'
 
     publishedGroupId = 'com.revosleap.smartdialog'
