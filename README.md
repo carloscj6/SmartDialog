@@ -7,4 +7,4 @@ Simple Progress dialog built for simplicity and beauty.
    implementation 'com.revosleap.smartdialog:dialog:1.0.0'
    ```
 ## License
-This is a free amd open source library Licensed under [Apache](/LICENSE) license.
+This is a free amd open source library Licensed under [Apache License 2.0](/LICENSE).
