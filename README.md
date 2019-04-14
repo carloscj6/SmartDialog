@@ -6,4 +6,5 @@ Simple Progress dialog built for simplicity and beauty.
 ```gradle 
    implementation 'com.revosleap.smartdialog:dialog:1.0.0'
    ```
-
+## License
+This is a free amd open source library Licensed under [Apache](/LICENSE) license.
