@@ -17,8 +17,6 @@ class SmartDialog(dialogContext: Context) : AlertDialog(dialogContext) {
         super.onCreate(savedInstanceState)
         window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         setContentView(R.layout.smart_dialog)
-
-
     }
 
     /**
@@ -26,9 +24,9 @@ class SmartDialog(dialogContext: Context) : AlertDialog(dialogContext) {
      * Show positive button and pass its onClickListener
      */
     fun onPositiveButtonClicked(onClickListener: View.OnClickListener?) {
-        if (onClickListener != null) {
-            buttonPositive?.visibility = View.VISIBLE
-            buttonPositive?.setOnClickListener(onClickListener)
+        if (onClickListener != null) buttonPositive?.apply {
+            visibility = View.VISIBLE
+            setOnClickListener(onClickListener)
         }
     }
 
@@ -38,9 +36,9 @@ class SmartDialog(dialogContext: Context) : AlertDialog(dialogContext) {
      */
 
     fun onNegativeButtonClicked(onClickListener: View.OnClickListener?) {
-        if (onClickListener != null) {
-            buttonNegative?.visibility = View.VISIBLE
-            buttonNegative?.setOnClickListener(onClickListener)
+        if (onClickListener != null) buttonNegative?.apply {
+            visibility = View.VISIBLE
+            setOnClickListener(onClickListener)
         }
     }
 
@@ -50,11 +48,10 @@ class SmartDialog(dialogContext: Context) : AlertDialog(dialogContext) {
      */
 
     fun onNeutralButtonClicked(onClickListener: View.OnClickListener?) {
-        if (onClickListener != null) {
-            buttonNeutral?.visibility = View.VISIBLE
-            buttonNeutral?.setOnClickListener(onClickListener)
+        if (onClickListener != null) buttonNeutral?.apply {
+            visibility = View.VISIBLE
+            setOnClickListener(onClickListener)
         }
-
     }
 
     /**
@@ -98,9 +95,8 @@ class SmartDialog(dialogContext: Context) : AlertDialog(dialogContext) {
      * @param cancelable
      * make dialog cancelable
      */
-    fun changeProgress(title: String,cancelable: Boolean) {
+    fun changeProgress(title: String, cancelable: Boolean) {
         textViewTitle.text = title
         setCancelable(cancelable)
     }
-
 }
